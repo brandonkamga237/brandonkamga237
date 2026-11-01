@@ -7,9 +7,9 @@ OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().paren
 
 THEMES = {
     "dark": dict(bg="#0d1117", panel="#161b22", border="#30363d", text="#e6edf3",
-                 muted="#8b949e", a1="#2f81f7", a2="#a371f7", ok="#3fb950", grid="#21262d"),
+                 muted="#8b949e", dot="#484f58", grid="#161b22"),
     "light": dict(bg="#ffffff", panel="#f6f8fa", border="#d0d7de", text="#1f2328",
-                  muted="#59636e", a1="#0969da", a2="#8250df", ok="#1a7f37", grid="#eaeef2"),
+                  muted="#59636e", dot="#d0d7de", grid="#f3f4f6"),
 }
 
 COPY = {
@@ -49,30 +49,22 @@ def render(t, c):
     for prompt, text in c["term"]:
         if prompt:
             term_lines.append(
-                f'<text x="712" y="{y}" class="mono"><tspan fill="{t["ok"]}">{prompt}</tspan>'
+                f'<text x="712" y="{y}" class="mono"><tspan fill="{t["muted"]}">{prompt}</tspan>'
                 f'<tspan dx="10" fill="{t["text"]}">{escape(text)}</tspan></text>')
             y += 22
         else:
             term_lines.append(f'<text x="712" y="{y}" class="mono" fill="{t["muted"]}">{escape(text)}</text>')
             y += 30
-    term_lines.append(f'<text x="712" y="{y}" class="mono" fill="{t["ok"]}">$</text>')
+    term_lines.append(f'<text x="712" y="{y}" class="mono" fill="{t["muted"]}">$</text>')
     cursor_y = y - 14
     tag = "".join(
         f'<text x="64" y="{222 + i * 30}" class="sans" font-size="19" fill="{t["muted"]}">{escape(line)}</text>'
         for i, line in enumerate(c["tag"]))
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Brandon Kamga, {c["role"]}">
   <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="{t["a1"]}"/><stop offset="1" stop-color="{t["a2"]}"/>
-    </linearGradient>
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M32 0H0V32" fill="none" stroke="{t["grid"]}" stroke-width="1"/>
     </pattern>
-    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="{t["bg"]}" stop-opacity="1"/>
-      <stop offset="0.45" stop-color="{t["bg"]}" stop-opacity="0.92"/>
-      <stop offset="1" stop-color="{t["bg"]}" stop-opacity="0.55"/>
-    </linearGradient>
     <clipPath id="card"><rect x="0.5" y="0.5" width="1199" height="319" rx="16"/></clipPath>
     <style>
       .sans {{ font-family: {SANS}; }}
@@ -84,22 +76,20 @@ def render(t, c):
   <g clip-path="url(#card)">
     <rect width="1200" height="320" fill="{t["bg"]}"/>
     <rect width="1200" height="320" fill="url(#grid)"/>
-    <rect width="1200" height="320" fill="url(#fade)"/>
-    <rect width="1200" height="4" fill="url(#accent)"/>
   </g>
   <rect x="0.5" y="0.5" width="1199" height="319" rx="16" fill="none" stroke="{t["border"]}"/>
 
-  <text x="64" y="84" class="sans" font-size="13" font-weight="600" letter-spacing="2" fill="{t["a1"]}">{escape(c["eyebrow"])}</text>
+  <text x="64" y="84" class="sans" font-size="13" font-weight="600" letter-spacing="2" fill="{t["muted"]}">{escape(c["eyebrow"])}</text>
   <text x="62" y="146" class="sans" font-size="58" font-weight="700" letter-spacing="-1.5" fill="{t["text"]}">Brandon Kamga</text>
-  <text x="64" y="184" class="sans" font-size="24" font-weight="500" fill="url(#accent)">{c["role"]}</text>
+  <text x="64" y="184" class="sans" font-size="24" font-weight="500" fill="{t["text"]}">{c["role"]}</text>
   {tag}
 
   <rect x="680" y="36" width="456" height="248" rx="12" fill="{t["panel"]}" stroke="{t["border"]}"/>
-  <circle cx="704" cy="60" r="5.5" fill="#ff5f57"/><circle cx="723" cy="60" r="5.5" fill="#febc2e"/><circle cx="742" cy="60" r="5.5" fill="#28c840"/>
+  <circle cx="704" cy="60" r="5.5" fill="{t["dot"]}"/><circle cx="723" cy="60" r="5.5" fill="{t["dot"]}"/><circle cx="742" cy="60" r="5.5" fill="{t["dot"]}"/>
   <text x="1112" y="65" text-anchor="end" class="mono" font-size="12" fill="{t["muted"]}">~/brandonkamga237</text>
   <line x1="680" y1="80" x2="1136" y2="80" stroke="{t["border"]}"/>
   {"".join(term_lines)}
-  <rect class="cursor" x="730" y="{cursor_y}" width="9" height="18" fill="{t["a1"]}"/>
+  <rect class="cursor" x="730" y="{cursor_y}" width="9" height="18" fill="{t["text"]}"/>
 </svg>
 '''
 

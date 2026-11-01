@@ -7,10 +7,11 @@
 
 <p align="center">
   <a href="https://porfolio-olive-ten.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-24292f?style=flat-square&logo=vercel&logoColor=white"></a>
-  <a href="https://linkedin.com/in/brandon-duclerc-tamwa-kamga-3546a2291/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
   <a href="https://dev.to/brandoniscoding-dev"><img alt="dev.to" src="https://img.shields.io/badge/dev.to-0a0a0a?style=flat-square&logo=devdotto&logoColor=white"></a>
   <a href="https://whatsapp.com/channel/0029VbAyFN21HsprPN1amr2a"><img alt="Chaîne WhatsApp" src="https://img.shields.io/badge/Cha%C3%AEne_WhatsApp-25d366?style=flat-square&logo=whatsapp&logoColor=white"></a>
   <img alt="Ouvert aux opportunités" src="https://img.shields.io/badge/Ouvert_aux_opportunit%C3%A9s-2ea44f?style=flat-square">
+  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=brandonkamga237&amp;style=flat-square&amp;color=24292f&amp;label=Vues_du_profil">
 </p>
 
 ## À propos
@@ -18,53 +19,6 @@
 Je suis **Brandon Duclerc Tamwa Kamga**, ingénieur logiciel basé à Yaoundé, au Cameroun. Je construis des systèmes backend et les plateformes qui les entourent : modélisation métier, API, tâches de fond, authentification, stockage, conteneurs et livraison.
 
 L'essentiel de mon travail, ce sont des produits complets, utilisés par de vraies personnes et maintenus dans la durée, pas des démos. Je tiens à des frontières claires, à une infrastructure sans surprise et à un code qu'un nouveau collègue lance en une seule commande.
-
-## Projets phares
-
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/brandonkamga237/sourcefolio">SourceFolio</a></h3>
-      Un catalogue de portfolios de développeurs dont le code source est public. Les auteurs publient en un clic via GitHub et reçoivent des retours, des statistiques privées et un rapport de santé automatique de leur site. En français et en anglais.
-      <br><br>
-      <sub><b>Java 21 · Spring Boot 4 · Next.js · PostgreSQL · JobRunr · Playwright</b></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/brandonkamga237/lescracks-platform">LesCracks</a></h3>
-      La plateforme derrière <a href="https://lescracks.com">lescracks.com</a> : blog tech, événements et hackathons, profils membres avec badges et certificats, newsletter. En production, livrée par versions successives.
-      <br><br>
-      <sub><b>Java 21 · Spring Boot 3 · React · TypeScript · PostgreSQL · MinIO</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/brandonkamga237/ghemit-paltform">Plateforme Gehmit</a></h3>
-      Site public et back-office d'administration de <a href="https://gehmit.org">Gehmit</a>, association camerounaise qui forme les jeunes aux métiers du numérique. Backend hexagonal orienté domaine, authentification unique avec Keycloak.
-      <br><br>
-      <sub><b>Spring Boot · DDD · Keycloak · React 19 · PostgreSQL · MinIO</b></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/brandonkamga237/kross">Kross</a></h3>
-      Un serveur web léger en Go, écrit directement sur des sockets TCP pour comprendre HTTP octet par octet. Testé avec le détecteur de race conditions.
-      <br><br>
-      <sub><b>Go · TCP · HTTP/1.1 · Make</b></sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/brandonkamga237/TeQizz">TeQizz</a></h3>
-      Une plateforme d'apprentissage tech gamifiée : QCM chronométrés et jeux de speed matching, avec du contenu proposé par la communauté et une connexion OAuth2.
-      <br><br>
-      <sub><b>Spring Boot 4 · Architecture hexagonale · React 19 · JWT / OAuth2</b></sub>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="https://github.com/brandonkamga237/fortube">ForTube</a></h3>
-      Un téléchargeur vidéo auto-hébergeable, avec téléchargement parallèle des fragments et vitesse, temps restant et progression envoyés en direct au navigateur via SSE.
-      <br><br>
-      <sub><b>Python · FastAPI · React 19 · TypeScript · SSE</b></sub>
-    </td>
-  </tr>
-</table>
 
 ## Ma façon de construire
 
@@ -96,12 +50,25 @@ L'essentiel de mon travail, ce sont des produits complets, utilisés par de vrai
 
 <sub>Aussi : Keycloak, MinIO / S3, Flyway, JobRunr, Playwright, JPA / Hibernate, TanStack Query, next-intl.</sub>
 
-## En ce moment
+## Statistiques GitHub
 
-- Je mène **SourceFolio** vers sa première version publique.
-- J'approfondis les fondamentaux systèmes avec **Kross**.
-- Je fais grandir la communauté tech **LesCracks** au Cameroun.
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/stats-dark.svg"><img alt="GitHub stats" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/stats-light.svg" width="49%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/langs-dark.svg"><img alt="Top languages" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/langs-light.svg" width="49%"></picture>
+</p>
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=brandonkamga237&amp;border_radius=12&amp;background=0D1117&amp;border=30363D&amp;stroke=30363D&amp;ring=E6EDF3&amp;fire=E6EDF3&amp;currStreakNum=E6EDF3&amp;sideNums=E6EDF3&amp;currStreakLabel=E6EDF3&amp;sideLabels=8B949E&amp;dates=8B949E&amp;locale=fr"><img alt="GitHub streak" src="https://streak-stats.demolab.com/?user=brandonkamga237&amp;border_radius=12&amp;background=FFFFFF&amp;border=D0D7DE&amp;stroke=D0D7DE&amp;ring=1F2328&amp;fire=1F2328&amp;currStreakNum=1F2328&amp;sideNums=1F2328&amp;currStreakLabel=1F2328&amp;sideLabels=59636E&amp;dates=59636E&amp;locale=fr" width="70%"></picture>
+</p>
+
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/snake-dark.svg"><img alt="Contribution snake" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/snake-light.svg" width="100%"></picture>
+</p>
+
+<p align="center">
+  <a href="https://github.com/brandonkamga237?tab=repositories"><img alt="Voir tous les dépôts" src="https://img.shields.io/badge/Voir_tous_les_d%C3%A9p%C3%B4ts-24292f?style=for-the-badge&logo=github&logoColor=white"></a>
+</p>
 
 ---
 
-<p align="center"><sub>Un poste, un projet ou une idée ? <a href="https://linkedin.com/in/brandon-duclerc-tamwa-kamga-3546a2291/">Écris-moi sur LinkedIn</a>.</sub></p>
+<p align="center"><sub>Un poste, un projet ou une idée ? <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/">Écris-moi sur LinkedIn</a>.</sub></p>
