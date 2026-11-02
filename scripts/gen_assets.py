@@ -2,11 +2,15 @@
 
 Usage: python3 scripts/gen_assets.py [out_dir]
 """
+import json
 import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(__file__).resolve().parent.parent / "assets"
+HERE = Path(__file__).resolve().parent
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parent / "assets"
+# Official brand glyphs from Simple Icons (CC0), keyed by slug.
+LOGOS = json.loads((HERE / "logos.json").read_text(encoding="utf-8"))
 
 THEMES = {
     "dark": dict(bg="#0d1117", panel="#161b22", border="#30363d", text="#e6edf3",
@@ -21,9 +25,9 @@ COPY = {
         role="Backend, Platform &amp; DevOps",
         tag=["I design and ship production systems end to end,",
              "from the domain model to the infrastructure."],
-        term=[("whoami", "brandon: builds systems that ship"),
+        term=[("whoami", "brandon: engineer, founder of lescracks"),
               ("focus --now", "distributed backends · platforms · infra"),
-              ("stack --core", "java · spring · go · typescript · postgres")],
+              ("stack --core", "java · spring · go · typescript · python")],
         toolbox="Toolbox",
         groups=["Languages", "Backend", "Frontend", "Data", "Platform", "Practices"],
     ),
@@ -32,21 +36,25 @@ COPY = {
         role="Backend, Plateforme &amp; DevOps",
         tag=["Je conçois et livre des systèmes en production,",
              "du modèle métier jusqu'à l'infrastructure."],
-        term=[("whoami", "brandon : des systèmes qui tournent en prod"),
+        term=[("whoami", "brandon : ingénieur, fondateur de lescracks"),
               ("focus --now", "backends distribués · plateformes · infra"),
-              ("stack --core", "java · spring · go · typescript · postgres")],
+              ("stack --core", "java · spring · go · typescript · python")],
         toolbox="Boîte à outils",
         groups=["Langages", "Backend", "Frontend", "Données", "Plateforme", "Pratiques"],
     ),
 }
 
+# (logo slug, label); practices are not brands, so they have no logo.
 TOOLBOX = [
-    ["Java", "Go", "TypeScript", "JavaScript", "Python", "SQL"],
-    ["Spring Boot", "FastAPI", "JPA / Hibernate", "Flyway", "JobRunr", "Keycloak"],
-    ["React", "Next.js", "Vite", "Tailwind CSS", "TanStack Query", "next-intl"],
-    ["PostgreSQL", "MinIO / S3"],
-    ["Docker", "Docker Compose", "Linux", "GitHub Actions", "Playwright"],
-    ["Hexagonal architecture", "DDD", "REST", "OAuth2 / JWT", "i18n"],
+    [("openjdk", "Java"), ("go", "Go"), ("typescript", "TypeScript"), ("javascript", "JavaScript"), ("python", "Python")],
+    [("springboot", "Spring Boot"), ("fastapi", "FastAPI"), ("hibernate", "Hibernate"), ("flyway", "Flyway"),
+     ("keycloak", "Keycloak"), ("jsonwebtokens", "JWT")],
+    [("react", "React"), ("nextdotjs", "Next.js"), ("vite", "Vite"), ("tailwindcss", "Tailwind CSS"),
+     ("reactquery", "TanStack Query")],
+    [("postgresql", "PostgreSQL"), ("minio", "MinIO")],
+    [("docker", "Docker"), ("linux", "Linux"), ("githubactions", "GitHub Actions"), ("git", "Git"),
+     ("apachemaven", "Maven"), ("gradle", "Gradle")],
+    [(None, "Hexagonal architecture"), (None, "DDD"), (None, "REST"), (None, "OAuth2"), (None, "i18n")],
 ]
 
 SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
@@ -126,18 +134,30 @@ def header(t, c):
 '''
 
 
-def toolbox(t, c):
+def logo_color(hex_color, t, theme):
+    """Brand colour, unless it would vanish on the card background."""
+    r, g, b = (int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5))
+    luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b
+    if (theme == "dark" and luminance < 0.18) or (theme == "light" and luminance > 0.85):
+        return t["text"]
+    return hex_color
+
+
+def toolbox(t, c, theme):
     rows, y = [], 104
     for label, items in zip(c["groups"], TOOLBOX):
         rows.append(f'<text x="48" y="{y + 5}" class="sans" font-size="12" font-weight="600" letter-spacing="1.5" fill="{t["muted"]}">{escape(label.upper())}</text>')
         x = 240
-        for item in items:
-            w = len(item) * 7.6 + 28
-            rows.append(
-                f'<rect x="{x}" y="{y - 16}" width="{w:.0f}" height="32" rx="16" fill="{t["chip"]}" stroke="{t["border"]}"/>'
-                f'<text x="{x + w / 2:.0f}" y="{y + 5}" text-anchor="middle" class="sans" font-size="14" fill="{t["text"]}">{escape(item)}</text>')
+        for slug, item in items:
+            icon = 26 if slug else 0
+            w = len(item) * 7.2 + 30 + icon
+            rows.append(f'<rect x="{x}" y="{y - 17}" width="{w:.0f}" height="34" rx="17" fill="{t["chip"]}" stroke="{t["border"]}"/>')
+            if slug:
+                logo = LOGOS[slug]
+                rows.append(f'<path transform="translate({x + 14} {y - 9}) scale(0.75)" fill="{logo_color(logo["hex"], t, theme)}" d="{logo["path"]}"/>')
+            rows.append(f'<text x="{x + 15 + icon}" y="{y + 5}" class="sans" font-size="14" fill="{t["text"]}">{escape(item)}</text>')
             x += w + 10
-        y += 48
+        y += 50
     height = y + 8
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="{height}" viewBox="0 0 1200 {height}" role="img" aria-label="{escape(c["toolbox"])}">
   <style>.sans {{ font-family: {SANS}; }}</style>
@@ -152,5 +172,5 @@ OUT.mkdir(parents=True, exist_ok=True)
 for lang, c in COPY.items():
     for name, t in THEMES.items():
         (OUT / f"header-{lang}-{name}.svg").write_text(header(t, c), encoding="utf-8")
-        (OUT / f"toolbox-{lang}-{name}.svg").write_text(toolbox(t, c), encoding="utf-8")
+        (OUT / f"toolbox-{lang}-{name}.svg").write_text(toolbox(t, c, name), encoding="utf-8")
 print("ok")

@@ -8,7 +8,7 @@
 <p align="center">
   <a href="https://porfolio-olive-ten.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-24292f?style=for-the-badge&logo=vercel&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-24292f?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://dev.to/brandoniscoding-dev"><img alt="dev.to" src="https://img.shields.io/badge/dev.to-24292f?style=for-the-badge&logo=devdotto&logoColor=white"></a>
+  <a href="https://lescracks.com"><img alt="LesCracks" src="https://img.shields.io/badge/LesCracks-24292f?style=for-the-badge"></a>
   <a href="https://whatsapp.com/channel/0029VbAyFN21HsprPN1amr2a"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-24292f?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
   <img alt="Ouvert aux opportunités" src="https://img.shields.io/badge/Ouvert_aux_opportunit%C3%A9s-2ea44f?style=for-the-badge">
   <img alt="Vues du profil" src="https://komarev.com/ghpvc/?username=brandonkamga237&amp;style=for-the-badge&amp;color=24292f&amp;label=Vues_du_profil">
@@ -17,6 +17,8 @@
 ## À propos
 
 Je suis **Brandon Duclerc Tamwa Kamga**, ingénieur logiciel basé à Yaoundé, au Cameroun. Je construis des systèmes backend et les plateformes qui les entourent : modélisation métier, API, tâches de fond, authentification, stockage, conteneurs et livraison.
+
+Je suis aussi le fondateur de **[LesCracks](https://lescracks.com)**, une plateforme où je partage ce que je sais, je forme les jeunes et je les pousse à innover en les informant sur la tech : articles, formations, événements, hackathons et le LesCracks Talk.
 
 L'essentiel de mon travail, ce sont des produits complets, utilisés par de vraies personnes et maintenus dans la durée, pas des démos. Je tiens à des frontières claires, à une infrastructure sans surprise et à un code qu'un nouveau collègue lance en une seule commande.
 
@@ -44,13 +46,25 @@ L'essentiel de mon travail, ce sont des produits complets, utilisés par de vrai
   <img alt="Contributions des 12 derniers mois, en graphe 3D" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/contrib-fr-light.svg" width="100%">
 </picture>
 
-## Derniers articles
+## Derniers articles sur LesCracks
+
+J'écris sur le [blog LesCracks](https://lescracks.com/blog).
 
 <!-- WRITING:START -->
-- [Démystifier le dossier .git : Le cœur du suivi de version de Git](https://dev.to/brandoniscoding-dev/demystifier-le-dossier-git-le-coeur-du-suivi-de-version-de-git-i5j) <sub>· 4 min de lecture</sub>
-- [Everything You Need to Know About Generics in Java](https://dev.to/brandoniscoding-dev/everything-you-need-to-know-about-generics-in-java-4igc) <sub>· 3 min de lecture</sub>
-- [Gestion des Exceptions en Java : Guide Complet](https://dev.to/brandoniscoding-dev/gestion-des-exceptions-en-java-guide-complet-2b4l) <sub>· 10 min de lecture</sub>
-- [Introduction à la Gestion des Données en Java : Cas d'Utilisation avec Spring et MySQL](https://dev.to/brandoniscoding-dev/introduction-a-la-gestion-des-donnees-en-java-cas-dutilisation-avec-spring-et-mysql-1bn0) <sub>· 16 min de lecture</sub>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://lescracks.com/blog/le-singleton-en-java-six-implementations-leurs-pieges-et-leurs-garanties"><img alt="" src="https://lescracks.com/api/files/ecfe0221-8c77-4268-91b5-3102bf0695a5.png" width="100%"></a><br>
+      <b><a href="https://lescracks.com/blog/le-singleton-en-java-six-implementations-leurs-pieges-et-leurs-garanties">Le Singleton en Java : six implémentations, leurs pièges et leurs garanties</a></b><br>
+      <sub>Architecture &amp; qualité · 23 min de lecture · 10 oct. 2026</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://lescracks.com/blog/comprendre-et-construire-un-serveur-web-from-scratch-partie-1-kross-ouvre-la-porte"><img alt="" src="https://lescracks.com/api/files/b438b151-ff4b-4e34-8fd7-634bd24418c6.png" width="100%"></a><br>
+      <b><a href="https://lescracks.com/blog/comprendre-et-construire-un-serveur-web-from-scratch-partie-1-kross-ouvre-la-porte">Comprendre et construire un serveur web from scratch, partie 1 : accepter des connexions</a></b><br>
+      <sub>Fondamentaux &amp; langages · 17 min de lecture · 10 oct. 2026</sub>
+    </td>
+  </tr>
+</table>
 <!-- WRITING:END -->
 
 <p align="center">
