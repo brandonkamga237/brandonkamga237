@@ -6,12 +6,12 @@
 </picture>
 
 <p align="center">
-  <a href="https://porfolio-olive-ten.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-24292f?style=flat-square&logo=vercel&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://dev.to/brandoniscoding-dev"><img alt="dev.to" src="https://img.shields.io/badge/dev.to-0a0a0a?style=flat-square&logo=devdotto&logoColor=white"></a>
-  <a href="https://whatsapp.com/channel/0029VbAyFN21HsprPN1amr2a"><img alt="Chaîne WhatsApp" src="https://img.shields.io/badge/Cha%C3%AEne_WhatsApp-25d366?style=flat-square&logo=whatsapp&logoColor=white"></a>
-  <img alt="Ouvert aux opportunités" src="https://img.shields.io/badge/Ouvert_aux_opportunit%C3%A9s-2ea44f?style=flat-square">
-  <img alt="Profile views" src="https://komarev.com/ghpvc/?username=brandonkamga237&amp;style=flat-square&amp;color=24292f&amp;label=Vues_du_profil">
+  <a href="https://porfolio-olive-ten.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-24292f?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-24292f?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://dev.to/brandoniscoding-dev"><img alt="dev.to" src="https://img.shields.io/badge/dev.to-24292f?style=for-the-badge&logo=devdotto&logoColor=white"></a>
+  <a href="https://whatsapp.com/channel/0029VbAyFN21HsprPN1amr2a"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-24292f?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
+  <img alt="Ouvert aux opportunités" src="https://img.shields.io/badge/Ouvert_aux_opportunit%C3%A9s-2ea44f?style=for-the-badge">
+  <img alt="Vues du profil" src="https://komarev.com/ghpvc/?username=brandonkamga237&amp;style=for-the-badge&amp;color=24292f&amp;label=Vues_du_profil">
 </p>
 
 ## À propos
@@ -27,43 +27,31 @@ L'essentiel de mon travail, ce sont des produits complets, utilisés par de vrai
 - **Livré, pas seulement codé.** Versions publiées, migrations, tâches de fond et contrôles de santé font partie du travail.
 - **Bilingue par défaut.** Les produits que je construis pour ma région sortent en français et en anglais.
 
-## Boîte à outils
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/toolbox-fr-dark.svg">
+  <img alt="Boîte à outils : Java, Go, TypeScript, JavaScript, Python, SQL, Spring Boot, FastAPI, JPA / Hibernate, Flyway, JobRunr, Keycloak, React, Next.js, Vite, Tailwind CSS, TanStack Query, next-intl, PostgreSQL, MinIO / S3, Docker, Docker Compose, Linux, GitHub Actions, Playwright, hexagonal architecture, DDD, REST, OAuth2 / JWT, i18n" src="assets/toolbox-fr-light.svg" width="100%">
+</picture>
 
-<table>
-  <tr>
-    <td><b>Langages</b></td>
-    <td><img alt="Java, Go, TypeScript, JavaScript, Python" src="https://skillicons.dev/icons?i=java,go,ts,js,python"></td>
-  </tr>
-  <tr>
-    <td><b>Backend</b></td>
-    <td><img alt="Spring, FastAPI, PostgreSQL" src="https://skillicons.dev/icons?i=spring,fastapi,postgres"></td>
-  </tr>
-  <tr>
-    <td><b>Frontend</b></td>
-    <td><img alt="React, Next.js, Vite, Tailwind CSS" src="https://skillicons.dev/icons?i=react,nextjs,vite,tailwind"></td>
-  </tr>
-  <tr>
-    <td><b>Plateforme</b></td>
-    <td><img alt="Docker, Linux, GitHub Actions, Git" src="https://skillicons.dev/icons?i=docker,linux,githubactions,git"></td>
-  </tr>
-</table>
+## Activité
 
-<sub>Aussi : Keycloak, MinIO / S3, Flyway, JobRunr, Playwright, JPA / Hibernate, TanStack Query, next-intl.</sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/overview-fr-dark.svg">
+  <img alt="Activité GitHub et langages les plus utilisés" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/overview-fr-light.svg" width="100%">
+</picture>
 
-## Statistiques GitHub
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/contrib-fr-dark.svg">
+  <img alt="Contributions des 12 derniers mois, en graphe 3D" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/contrib-fr-light.svg" width="100%">
+</picture>
 
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/stats-dark.svg"><img alt="GitHub stats" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/stats-light.svg" width="49%"></picture>
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/langs-dark.svg"><img alt="Top languages" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/langs-light.svg" width="49%"></picture>
-</p>
+## Derniers articles
 
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com/?user=brandonkamga237&amp;border_radius=12&amp;background=0D1117&amp;border=30363D&amp;stroke=30363D&amp;ring=E6EDF3&amp;fire=E6EDF3&amp;currStreakNum=E6EDF3&amp;sideNums=E6EDF3&amp;currStreakLabel=E6EDF3&amp;sideLabels=8B949E&amp;dates=8B949E&amp;locale=fr"><img alt="GitHub streak" src="https://streak-stats.demolab.com/?user=brandonkamga237&amp;border_radius=12&amp;background=FFFFFF&amp;border=D0D7DE&amp;stroke=D0D7DE&amp;ring=1F2328&amp;fire=1F2328&amp;currStreakNum=1F2328&amp;sideNums=1F2328&amp;currStreakLabel=1F2328&amp;sideLabels=59636E&amp;dates=59636E&amp;locale=fr" width="70%"></picture>
-</p>
-
-<p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/snake-dark.svg"><img alt="Contribution snake" src="https://raw.githubusercontent.com/brandonkamga237/brandonkamga237/output/snake-light.svg" width="100%"></picture>
-</p>
+<!-- WRITING:START -->
+- [Démystifier le dossier .git : Le cœur du suivi de version de Git](https://dev.to/brandoniscoding-dev/demystifier-le-dossier-git-le-coeur-du-suivi-de-version-de-git-i5j) <sub>· 4 min de lecture</sub>
+- [Everything You Need to Know About Generics in Java](https://dev.to/brandoniscoding-dev/everything-you-need-to-know-about-generics-in-java-4igc) <sub>· 3 min de lecture</sub>
+- [Gestion des Exceptions en Java : Guide Complet](https://dev.to/brandoniscoding-dev/gestion-des-exceptions-en-java-guide-complet-2b4l) <sub>· 10 min de lecture</sub>
+- [Introduction à la Gestion des Données en Java : Cas d'Utilisation avec Spring et MySQL](https://dev.to/brandoniscoding-dev/introduction-a-la-gestion-des-donnees-en-java-cas-dutilisation-avec-spring-et-mysql-1bn0) <sub>· 16 min de lecture</sub>
+<!-- WRITING:END -->
 
 <p align="center">
   <a href="https://github.com/brandonkamga237?tab=repositories"><img alt="Voir tous les dépôts" src="https://img.shields.io/badge/Voir_tous_les_d%C3%A9p%C3%B4ts-24292f?style=for-the-badge&logo=github&logoColor=white"></a>

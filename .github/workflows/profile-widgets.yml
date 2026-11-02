@@ -16,20 +16,20 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Stats and languages cards
+      - name: Latest writing
+        run: |
+          python3 scripts/update_writing.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md README.fr.md
+          git diff --cached --quiet || { git commit -m "Update latest writing" && git push; }
+
+      - name: Activity cards
         run: python3 scripts/gen_stats.py dist
         env:
           # Optional STATS_TOKEN (classic PAT, read:user + repo) also counts private contributions.
           GH_TOKEN: ${{ secrets.STATS_TOKEN || secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
-
-      - name: Contribution snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/snake-light.svg?palette=github-light&color_snake=#1f2328
-            dist/snake-dark.svg?palette=github-dark&color_snake=#e6edf3
 
       - name: Publish to the output branch
         uses: crazy-max/ghaction-github-pages@v4
