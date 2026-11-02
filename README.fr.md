@@ -6,7 +6,7 @@
 </picture>
 
 <p align="center">
-  <a href="https://porfolio-olive-ten.vercel.app/"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-24292f?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  <a href="https://brandonkamga.com/fr"><img alt="Portfolio : brandonkamga.com" src="https://img.shields.io/badge/brandonkamga.com-d4af37?style=for-the-badge&logo=googlechrome&logoColor=black"></a>
   <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-24292f?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <a href="https://lescracks.com"><img alt="LesCracks" src="https://img.shields.io/badge/LesCracks-24292f?style=for-the-badge"></a>
   <a href="https://whatsapp.com/channel/0029VbAyFN21HsprPN1amr2a"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp-24292f?style=for-the-badge&logo=whatsapp&logoColor=white"></a>
@@ -73,4 +73,4 @@ J'écris sur le [blog LesCracks](https://lescracks.com/blog).
 
 ---
 
-<p align="center"><sub>Un poste, un projet ou une idée ? <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/">Écris-moi sur LinkedIn</a>.</sub></p>
+<p align="center"><sub>Un poste, un projet ou une idée ? <a href="https://brandonkamga.com/fr#contact">Écris-moi sur brandonkamga.com</a> ou <a href="https://www.linkedin.com/in/brandon-kamga-b9a55b436/">sur LinkedIn</a>.</sub></p>
