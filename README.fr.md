@@ -54,10 +54,17 @@ J'écris sur le [blog LesCracks](https://lescracks.com/blog).
 <table>
   <tr>
     <td width="50%" valign="top">
+      <a href="https://lescracks.com/blog/http-1-0-1-1-2-et-3-trente-ans-de-guerre-contre-l-attente"><img alt="" src="https://lescracks.com/api/files/72e05058-42e9-4820-bc44-0f6eb09fd485.png" width="100%"></a><br>
+      <b><a href="https://lescracks.com/blog/http-1-0-1-1-2-et-3-trente-ans-de-guerre-contre-l-attente">De HTTP/1.0 à HTTP/3 : comment le web a appris à ne plus attendre</a></b><br>
+      <sub>Fondamentaux &amp; langages · 27 min de lecture · 3 nov. 2026</sub>
+    </td>
+    <td width="50%" valign="top">
       <a href="https://lescracks.com/blog/le-singleton-en-java-six-implementations-leurs-pieges-et-leurs-garanties"><img alt="" src="https://lescracks.com/api/files/ecfe0221-8c77-4268-91b5-3102bf0695a5.png" width="100%"></a><br>
       <b><a href="https://lescracks.com/blog/le-singleton-en-java-six-implementations-leurs-pieges-et-leurs-garanties">Le Singleton en Java : six implémentations, leurs pièges et leurs garanties</a></b><br>
       <sub>Architecture &amp; qualité · 23 min de lecture · 10 oct. 2026</sub>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <a href="https://lescracks.com/blog/comprendre-et-construire-un-serveur-web-from-scratch-partie-1-kross-ouvre-la-porte"><img alt="" src="https://lescracks.com/api/files/b438b151-ff4b-4e34-8fd7-634bd24418c6.png" width="100%"></a><br>
       <b><a href="https://lescracks.com/blog/comprendre-et-construire-un-serveur-web-from-scratch-partie-1-kross-ouvre-la-porte">Comprendre et construire un serveur web from scratch, partie 1 : accepter des connexions</a></b><br>
